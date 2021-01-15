@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href='https://fonts.googleapis.com/css?family=Press Start 2P' rel='stylesheet'>
         <link rel="stylesheet" href="estyle.css">
         <title>Welcome</title>
     </head>
 
-    <body>
-        <h1>Site under construction.</h1>
-        <p>Come back soon!</p>
+    <body onload="typeWriter()">
+        <h1>工事中です</h1>
+        <p id="demo"></p>
+        
+        <script>
+        var i = 0;
+        var j = 0;
+        var txt = '01010011 01101111 01110010 01110010 01111001 00100000 01100110 01101111 01110010 00100000 01110100 01101000 01100101 00100000 01110100 01110010 01101111 01110101 01100010 01101100 01100101 00100001 00100000 01010000 01101100 01100101 01100001 01110011 01100101 00100000 01100011 01101111 01101101 01100101 00100000 01100010 01100001 01100011 01101011 00100000 01110011 01101111 01101111 01101110 00100001';
+        var speed = 30;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+        </script>
     </body>
 </html>
