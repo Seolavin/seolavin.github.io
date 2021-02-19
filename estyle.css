@@ -1,16 +1,46 @@
+header {
+    text-align: center;
+    position: relative;
+    height: 50px;
+}
+
 body {
-    background-color: black;
+    margin-top: -1px;
+    background-color: #242526;
+}
+
+.topnav {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.topnav a {
+    text-align: center;
+    padding: 0px 20px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Press Start 2P';
+    font-weight: 200px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    color: red;
+    
 }
 
 h1 {
-    color: springgreen;
+    color: red;
     font-family: 'Press Start 2P';
     font-size: 38px;
     text-align: center;
 }
 
 p {
-    color: springgreen;
+    padding-top: 90px;
+    color: red;
     font-family: 'Press Start 2P';
     font-size: 24px;
+    text-align: center;
 }
