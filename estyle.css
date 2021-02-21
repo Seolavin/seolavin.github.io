@@ -1,46 +1,83 @@
 header {
-    text-align: center;
-    position: relative;
+    margin-top: -10px;
+    position: absolute;
     height: 50px;
 }
 
 body {
-    margin-top: -1px;
-    background-color: #242526;
+    background-color: #151515;
+    display: flex;
+    justify-content: center;
 }
 
 .topnav {
     position: absolute;
     width: 100%;
     text-align: center;
+    height: 50px;
 }
 
 .topnav a {
+    position: relative;
+    bottom: 29px;
     text-align: center;
     padding: 0px 20px;
     color: white;
-    font-size: 20px;
-    font-family: 'Press Start 2P';
-    font-weight: 200px;
+    font-size: 30px;
+    font-family: 'Bungee Hairline', cursive;
     text-decoration: none;
 }
 
 .topnav a:hover {
     color: red;
-    
+}
+
+.typewriter h1 {
+    position: absolute;
+    top: 300px;
+    line-height: 0.75;
+    color: red;
+    font-size: 50px;
+    font-family: 'Bungee Hairline', cursive;
+    overflow: hidden;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    animation:
+        typing 4s steps(30, end),
+        blink-caret 1s infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 760px }
+}
+
+@keyframes blink-caret {
+    0% { border-right-color: transparent }
+    80% { border-right-color: white }
 }
 
 h1 {
     color: red;
-    font-family: 'Press Start 2P';
-    font-size: 38px;
+    font-family: 'Bungee Hairline', cursive;
+    font-size: 40px;
     text-align: center;
 }
 
 p {
-    padding-top: 90px;
+    position: absolute;
+    top: 375px;
     color: red;
-    font-family: 'Press Start 2P';
-    font-size: 24px;
+    font-family: 'Bungee Hairline', cursive;
+    font-size: 30px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: dimgrey;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Bungee Hairline', cursive;
 }
