@@ -1,11 +1,16 @@
 header {
-    margin-top: -10px;
     position: absolute;
     height: 50px;
+    margin-top: -8px;
 }
 
 body {
     background-color: #151515;
+    background-image: url(visual.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
     justify-content: center;
 }
@@ -19,13 +24,11 @@ body {
 
 .topnav a {
     position: relative;
-    bottom: 29px;
     text-align: center;
-    padding: 0px 20px;
+    padding: 20px;
     color: white;
-    font-size: 30px;
-    font-family: 'Bungee Hairline', cursive;
-    text-decoration: none;
+    line-height: 0.75;
+    font-size: 25px;
 }
 
 .topnav a:hover {
@@ -40,7 +43,7 @@ body {
     font-size: 50px;
     font-family: 'Bungee Hairline', cursive;
     overflow: hidden;
-    border-right: 2px solid white;
+    border-right: 2px solid transparent;
     white-space: nowrap;
     animation:
         typing 4s steps(30, end),
@@ -54,7 +57,7 @@ body {
 
 @keyframes blink-caret {
     0% { border-right-color: transparent }
-    80% { border-right-color: white }
+    80% { border-right-color: red }
 }
 
 h1 {
