@@ -1,5 +1,5 @@
 header {
-    position: absolute;
+    position: relative;
     height: 50px;
     margin-top: -8px;
 }
@@ -16,16 +16,17 @@ body {
 }
 
 .topnav {
+    height: 50px;
+    text-align: center;
+    display: inline-block;
     position: absolute;
     width: 100%;
-    text-align: center;
-    height: 50px;
+    overflow: hidden;
 }
 
 .topnav a {
-    position: relative;
     text-align: center;
-    padding: 20px;
+    padding: 0px 40px;
     color: white;
     line-height: 0.75;
     font-size: 25px;
@@ -33,6 +34,13 @@ body {
 
 .topnav a:hover {
     color: red;
+}
+
+.botnav {
+    position: absolute;
+    bottom: 0%;
+    justify-content: center;
+    height: 50px;
 }
 
 .typewriter h1 {
